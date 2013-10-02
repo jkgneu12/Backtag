@@ -1,0 +1,655 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C23BDB6617F3A1DE001F325C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C23BDB6517F3A1DE001F325C /* Foundation.framework */; };
+		C23BDB6817F3A1DE001F325C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C23BDB6717F3A1DE001F325C /* CoreGraphics.framework */; };
+		C23BDB6A17F3A1DE001F325C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C23BDB6917F3A1DE001F325C /* UIKit.framework */; };
+		C23BDB7017F3A1DE001F325C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C23BDB6E17F3A1DE001F325C /* InfoPlist.strings */; };
+		C23BDB7217F3A1DE001F325C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C23BDB7117F3A1DE001F325C /* main.m */; };
+		C23BDB7617F3A1DE001F325C /* BTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C23BDB7517F3A1DE001F325C /* BTAppDelegate.m */; };
+		C23BDB7817F3A1DE001F325C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C23BDB7717F3A1DE001F325C /* Images.xcassets */; };
+		C23BDB7F17F3A1DE001F325C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C23BDB7E17F3A1DE001F325C /* XCTest.framework */; };
+		C23BDB8017F3A1DE001F325C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C23BDB6517F3A1DE001F325C /* Foundation.framework */; };
+		C23BDB8117F3A1DE001F325C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C23BDB6917F3A1DE001F325C /* UIKit.framework */; };
+		C23BDB8917F3A1DE001F325C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C23BDB8717F3A1DE001F325C /* InfoPlist.strings */; };
+		C23BDB8B17F3A1DE001F325C /* BacktagTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C23BDB8A17F3A1DE001F325C /* BacktagTests.m */; };
+		C23BDB9817F3A27B001F325C /* BTLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C23BDB9617F3A27B001F325C /* BTLoginViewController.m */; };
+		C23BDB9917F3A27B001F325C /* BTLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C23BDB9717F3A27B001F325C /* BTLoginViewController.xib */; };
+		C23BDB9B17F3A320001F325C /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C23BDB9A17F3A320001F325C /* Social.framework */; };
+		C23BDB9D17F3A36E001F325C /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C23BDB9C17F3A36E001F325C /* Parse.framework */; };
+		C23BDBA617F3A5B1001F325C /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C23BDBA417F3A537001F325C /* FacebookSDK.framework */; };
+		C23BDBA817F3A5E4001F325C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C23BDBA717F3A5E4001F325C /* SystemConfiguration.framework */; };
+		C23BDBAA17F3A631001F325C /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C23BDBA917F3A631001F325C /* MobileCoreServices.framework */; };
+		C23BDBAE17F3A754001F325C /* BTNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C23BDBAC17F3A754001F325C /* BTNavigationViewController.m */; };
+		C23BDBAF17F3A754001F325C /* BTNavigationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C23BDBAD17F3A754001F325C /* BTNavigationViewController.xib */; };
+		C23BDBB917F3B217001F325C /* BTProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C23BDBB717F3B217001F325C /* BTProfileViewController.m */; };
+		C23BDBBA17F3B217001F325C /* BTProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C23BDBB817F3B217001F325C /* BTProfileViewController.xib */; };
+		C29CD54017F7358700B36807 /* BTFeedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C29CD53F17F7358700B36807 /* BTFeedCell.xib */; };
+		C29CD54317F73C5200B36807 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = C29CD54217F73C5200B36807 /* UIImage+ImageEffects.m */; };
+		C29CD54A17F74B0D00B36807 /* headerboards@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C29CD54917F74B0D00B36807 /* headerboards@2x.png */; };
+		C29CD54C17F74D2E00B36807 /* comment@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C29CD54B17F74D2E00B36807 /* comment@2x.png */; };
+		C29CD54E17F757B800B36807 /* BTFriendCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C29CD54D17F757B800B36807 /* BTFriendCell.xib */; };
+		C29CD55017F75AFB00B36807 /* BTExploreCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C29CD54F17F75AFB00B36807 /* BTExploreCell.xib */; };
+		C29CD55317F7659700B36807 /* BTSubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C29CD55217F7659700B36807 /* BTSubViewController.m */; };
+		C29CD55717F76B1E00B36807 /* BTCreateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C29CD55517F76B1E00B36807 /* BTCreateViewController.m */; };
+		C29CD55817F76B1E00B36807 /* BTCreateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C29CD55617F76B1E00B36807 /* BTCreateViewController.xib */; };
+		C29CD56317F76E2400B36807 /* BTPlayersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C29CD56117F76E2400B36807 /* BTPlayersViewController.m */; };
+		C29CD56417F76E2400B36807 /* BTPlayersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C29CD56217F76E2400B36807 /* BTPlayersViewController.xib */; };
+		C29CD56A17F777A900B36807 /* BTGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C29CD56817F777A900B36807 /* BTGameViewController.m */; };
+		C29CD56B17F777A900B36807 /* BTGameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C29CD56917F777A900B36807 /* BTGameViewController.xib */; };
+		C2DCB08517F720CA00966140 /* BTMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DCB08317F720CA00966140 /* BTMainViewController.m */; };
+		C2DCB08617F720CA00966140 /* BTMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2DCB08417F720CA00966140 /* BTMainViewController.xib */; };
+		C2DCB08A17F7250800966140 /* BTFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DCB08817F7250800966140 /* BTFeedViewController.m */; };
+		C2DCB08B17F7250800966140 /* BTFeedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2DCB08917F7250800966140 /* BTFeedViewController.xib */; };
+		C2DCB08F17F7252300966140 /* BTFriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DCB08D17F7252300966140 /* BTFriendsViewController.m */; };
+		C2DCB09017F7252300966140 /* BTFriendsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2DCB08E17F7252300966140 /* BTFriendsViewController.xib */; };
+		C2DCB09417F7253700966140 /* BTPlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DCB09217F7253700966140 /* BTPlayViewController.m */; };
+		C2DCB09517F7253700966140 /* BTPlayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2DCB09317F7253700966140 /* BTPlayViewController.xib */; };
+		C2DCB09917F7254800966140 /* BTExploreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DCB09717F7254800966140 /* BTExploreViewController.m */; };
+		C2DCB09A17F7254800966140 /* BTExploreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2DCB09817F7254800966140 /* BTExploreViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C23BDB8217F3A1DE001F325C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C23BDB5A17F3A1DE001F325C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C23BDB6117F3A1DE001F325C;
+			remoteInfo = Backtag;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C23BDB6217F3A1DE001F325C /* Backtag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Backtag.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C23BDB6517F3A1DE001F325C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C23BDB6717F3A1DE001F325C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C23BDB6917F3A1DE001F325C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C23BDB6D17F3A1DE001F325C /* Backtag-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Backtag-Info.plist"; sourceTree = "<group>"; };
+		C23BDB6F17F3A1DE001F325C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C23BDB7117F3A1DE001F325C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C23BDB7317F3A1DE001F325C /* Backtag-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Backtag-Prefix.pch"; sourceTree = "<group>"; };
+		C23BDB7417F3A1DE001F325C /* BTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTAppDelegate.h; sourceTree = "<group>"; };
+		C23BDB7517F3A1DE001F325C /* BTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTAppDelegate.m; sourceTree = "<group>"; };
+		C23BDB7717F3A1DE001F325C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C23BDB7D17F3A1DE001F325C /* BacktagTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BacktagTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C23BDB7E17F3A1DE001F325C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		C23BDB8617F3A1DE001F325C /* BacktagTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BacktagTests-Info.plist"; sourceTree = "<group>"; };
+		C23BDB8817F3A1DE001F325C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C23BDB8A17F3A1DE001F325C /* BacktagTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BacktagTests.m; sourceTree = "<group>"; };
+		C23BDB9517F3A27B001F325C /* BTLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTLoginViewController.h; sourceTree = "<group>"; };
+		C23BDB9617F3A27B001F325C /* BTLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTLoginViewController.m; sourceTree = "<group>"; };
+		C23BDB9717F3A27B001F325C /* BTLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BTLoginViewController.xib; sourceTree = "<group>"; };
+		C23BDB9A17F3A320001F325C /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		C23BDB9C17F3A36E001F325C /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		C23BDBA417F3A537001F325C /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		C23BDBA717F3A5E4001F325C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		C23BDBA917F3A631001F325C /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		C23BDBAB17F3A754001F325C /* BTNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTNavigationViewController.h; sourceTree = "<group>"; };
+		C23BDBAC17F3A754001F325C /* BTNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTNavigationViewController.m; sourceTree = "<group>"; };
+		C23BDBAD17F3A754001F325C /* BTNavigationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BTNavigationViewController.xib; sourceTree = "<group>"; };
+		C23BDBB617F3B217001F325C /* BTProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTProfileViewController.h; sourceTree = "<group>"; };
+		C23BDBB717F3B217001F325C /* BTProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTProfileViewController.m; sourceTree = "<group>"; };
+		C23BDBB817F3B217001F325C /* BTProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BTProfileViewController.xib; sourceTree = "<group>"; };
+		C29CD53F17F7358700B36807 /* BTFeedCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BTFeedCell.xib; sourceTree = "<group>"; };
+		C29CD54117F73C5200B36807 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+ImageEffects.h"; path = "../../../Downloads/UIImageEffects/UIImageEffects/UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		C29CD54217F73C5200B36807 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+ImageEffects.m"; path = "../../../Downloads/UIImageEffects/UIImageEffects/UIImage+ImageEffects.m"; sourceTree = "<group>"; };
+		C29CD54917F74B0D00B36807 /* headerboards@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "headerboards@2x.png"; sourceTree = "<group>"; };
+		C29CD54B17F74D2E00B36807 /* comment@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "comment@2x.png"; sourceTree = "<group>"; };
+		C29CD54D17F757B800B36807 /* BTFriendCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BTFriendCell.xib; sourceTree = "<group>"; };
+		C29CD54F17F75AFB00B36807 /* BTExploreCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BTExploreCell.xib; sourceTree = "<group>"; };
+		C29CD55117F7659700B36807 /* BTSubViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTSubViewController.h; sourceTree = "<group>"; };
+		C29CD55217F7659700B36807 /* BTSubViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTSubViewController.m; sourceTree = "<group>"; };
+		C29CD55417F76B1E00B36807 /* BTCreateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BTCreateViewController.h; path = ../BTCreateViewController.h; sourceTree = "<group>"; };
+		C29CD55517F76B1E00B36807 /* BTCreateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BTCreateViewController.m; path = ../BTCreateViewController.m; sourceTree = "<group>"; };
+		C29CD55617F76B1E00B36807 /* BTCreateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BTCreateViewController.xib; path = ../BTCreateViewController.xib; sourceTree = "<group>"; };
+		C29CD56017F76E2400B36807 /* BTPlayersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTPlayersViewController.h; sourceTree = "<group>"; };
+		C29CD56117F76E2400B36807 /* BTPlayersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTPlayersViewController.m; sourceTree = "<group>"; };
+		C29CD56217F76E2400B36807 /* BTPlayersViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BTPlayersViewController.xib; sourceTree = "<group>"; };
+		C29CD56717F777A900B36807 /* BTGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTGameViewController.h; sourceTree = "<group>"; };
+		C29CD56817F777A900B36807 /* BTGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTGameViewController.m; sourceTree = "<group>"; };
+		C29CD56917F777A900B36807 /* BTGameViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BTGameViewController.xib; sourceTree = "<group>"; };
+		C2DCB08217F720CA00966140 /* BTMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTMainViewController.h; sourceTree = "<group>"; };
+		C2DCB08317F720CA00966140 /* BTMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTMainViewController.m; sourceTree = "<group>"; };
+		C2DCB08417F720CA00966140 /* BTMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BTMainViewController.xib; sourceTree = "<group>"; };
+		C2DCB08717F7250800966140 /* BTFeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTFeedViewController.h; sourceTree = "<group>"; };
+		C2DCB08817F7250800966140 /* BTFeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTFeedViewController.m; sourceTree = "<group>"; };
+		C2DCB08917F7250800966140 /* BTFeedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BTFeedViewController.xib; sourceTree = "<group>"; };
+		C2DCB08C17F7252300966140 /* BTFriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTFriendsViewController.h; sourceTree = "<group>"; };
+		C2DCB08D17F7252300966140 /* BTFriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTFriendsViewController.m; sourceTree = "<group>"; };
+		C2DCB08E17F7252300966140 /* BTFriendsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BTFriendsViewController.xib; sourceTree = "<group>"; };
+		C2DCB09117F7253700966140 /* BTPlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTPlayViewController.h; sourceTree = "<group>"; };
+		C2DCB09217F7253700966140 /* BTPlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTPlayViewController.m; sourceTree = "<group>"; };
+		C2DCB09317F7253700966140 /* BTPlayViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BTPlayViewController.xib; sourceTree = "<group>"; };
+		C2DCB09617F7254800966140 /* BTExploreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTExploreViewController.h; sourceTree = "<group>"; };
+		C2DCB09717F7254800966140 /* BTExploreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTExploreViewController.m; sourceTree = "<group>"; };
+		C2DCB09817F7254800966140 /* BTExploreViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BTExploreViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C23BDB5F17F3A1DE001F325C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C23BDBAA17F3A631001F325C /* MobileCoreServices.framework in Frameworks */,
+				C23BDBA817F3A5E4001F325C /* SystemConfiguration.framework in Frameworks */,
+				C23BDB9B17F3A320001F325C /* Social.framework in Frameworks */,
+				C23BDB6817F3A1DE001F325C /* CoreGraphics.framework in Frameworks */,
+				C23BDB6A17F3A1DE001F325C /* UIKit.framework in Frameworks */,
+				C23BDB6617F3A1DE001F325C /* Foundation.framework in Frameworks */,
+				C23BDB9D17F3A36E001F325C /* Parse.framework in Frameworks */,
+				C23BDBA617F3A5B1001F325C /* FacebookSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C23BDB7A17F3A1DE001F325C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C23BDB7F17F3A1DE001F325C /* XCTest.framework in Frameworks */,
+				C23BDB8117F3A1DE001F325C /* UIKit.framework in Frameworks */,
+				C23BDB8017F3A1DE001F325C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C23BDB5917F3A1DE001F325C = {
+			isa = PBXGroup;
+			children = (
+				C23BDB6B17F3A1DE001F325C /* Backtag */,
+				C23BDB8417F3A1DE001F325C /* BacktagTests */,
+				C23BDB6417F3A1DE001F325C /* Frameworks */,
+				C23BDB6317F3A1DE001F325C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C23BDB6317F3A1DE001F325C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C23BDB6217F3A1DE001F325C /* Backtag.app */,
+				C23BDB7D17F3A1DE001F325C /* BacktagTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C23BDB6417F3A1DE001F325C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C23BDBA917F3A631001F325C /* MobileCoreServices.framework */,
+				C23BDBA717F3A5E4001F325C /* SystemConfiguration.framework */,
+				C23BDBA417F3A537001F325C /* FacebookSDK.framework */,
+				C23BDB9C17F3A36E001F325C /* Parse.framework */,
+				C23BDB9A17F3A320001F325C /* Social.framework */,
+				C23BDB6517F3A1DE001F325C /* Foundation.framework */,
+				C23BDB6717F3A1DE001F325C /* CoreGraphics.framework */,
+				C23BDB6917F3A1DE001F325C /* UIKit.framework */,
+				C23BDB7E17F3A1DE001F325C /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C23BDB6B17F3A1DE001F325C /* Backtag */ = {
+			isa = PBXGroup;
+			children = (
+				C29CD54417F73C5700B36807 /* Categories */,
+				C23BDBB017F3A75E001F325C /* UI */,
+				C23BDB7417F3A1DE001F325C /* BTAppDelegate.h */,
+				C23BDB7517F3A1DE001F325C /* BTAppDelegate.m */,
+				C23BDBAB17F3A754001F325C /* BTNavigationViewController.h */,
+				C23BDBAC17F3A754001F325C /* BTNavigationViewController.m */,
+				C23BDB9517F3A27B001F325C /* BTLoginViewController.h */,
+				C23BDB9617F3A27B001F325C /* BTLoginViewController.m */,
+				C2DCB08217F720CA00966140 /* BTMainViewController.h */,
+				C2DCB08317F720CA00966140 /* BTMainViewController.m */,
+				C29CD55117F7659700B36807 /* BTSubViewController.h */,
+				C29CD55217F7659700B36807 /* BTSubViewController.m */,
+				C2DCB08717F7250800966140 /* BTFeedViewController.h */,
+				C2DCB08817F7250800966140 /* BTFeedViewController.m */,
+				C2DCB09617F7254800966140 /* BTExploreViewController.h */,
+				C2DCB09717F7254800966140 /* BTExploreViewController.m */,
+				C2DCB09117F7253700966140 /* BTPlayViewController.h */,
+				C2DCB09217F7253700966140 /* BTPlayViewController.m */,
+				C2DCB08C17F7252300966140 /* BTFriendsViewController.h */,
+				C2DCB08D17F7252300966140 /* BTFriendsViewController.m */,
+				C23BDBB617F3B217001F325C /* BTProfileViewController.h */,
+				C23BDBB717F3B217001F325C /* BTProfileViewController.m */,
+				C29CD55417F76B1E00B36807 /* BTCreateViewController.h */,
+				C29CD55517F76B1E00B36807 /* BTCreateViewController.m */,
+				C29CD56017F76E2400B36807 /* BTPlayersViewController.h */,
+				C29CD56117F76E2400B36807 /* BTPlayersViewController.m */,
+				C29CD56717F777A900B36807 /* BTGameViewController.h */,
+				C29CD56817F777A900B36807 /* BTGameViewController.m */,
+				C23BDB7717F3A1DE001F325C /* Images.xcassets */,
+				C23BDB6C17F3A1DE001F325C /* Supporting Files */,
+			);
+			path = Backtag;
+			sourceTree = "<group>";
+		};
+		C23BDB6C17F3A1DE001F325C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C23BDB9417F3A210001F325C /* Images */,
+				C23BDB6D17F3A1DE001F325C /* Backtag-Info.plist */,
+				C23BDB6E17F3A1DE001F325C /* InfoPlist.strings */,
+				C23BDB7117F3A1DE001F325C /* main.m */,
+				C23BDB7317F3A1DE001F325C /* Backtag-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C23BDB8417F3A1DE001F325C /* BacktagTests */ = {
+			isa = PBXGroup;
+			children = (
+				C23BDB8A17F3A1DE001F325C /* BacktagTests.m */,
+				C23BDB8517F3A1DE001F325C /* Supporting Files */,
+			);
+			path = BacktagTests;
+			sourceTree = "<group>";
+		};
+		C23BDB8517F3A1DE001F325C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C23BDB8617F3A1DE001F325C /* BacktagTests-Info.plist */,
+				C23BDB8717F3A1DE001F325C /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C23BDB9417F3A210001F325C /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				C29CD54B17F74D2E00B36807 /* comment@2x.png */,
+				C29CD54917F74B0D00B36807 /* headerboards@2x.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		C23BDBB017F3A75E001F325C /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				C23BDBAD17F3A754001F325C /* BTNavigationViewController.xib */,
+				C23BDB9717F3A27B001F325C /* BTLoginViewController.xib */,
+				C2DCB08417F720CA00966140 /* BTMainViewController.xib */,
+				C2DCB08917F7250800966140 /* BTFeedViewController.xib */,
+				C29CD53F17F7358700B36807 /* BTFeedCell.xib */,
+				C2DCB09817F7254800966140 /* BTExploreViewController.xib */,
+				C29CD54F17F75AFB00B36807 /* BTExploreCell.xib */,
+				C2DCB09317F7253700966140 /* BTPlayViewController.xib */,
+				C2DCB08E17F7252300966140 /* BTFriendsViewController.xib */,
+				C29CD54D17F757B800B36807 /* BTFriendCell.xib */,
+				C23BDBB817F3B217001F325C /* BTProfileViewController.xib */,
+				C29CD55617F76B1E00B36807 /* BTCreateViewController.xib */,
+				C29CD56217F76E2400B36807 /* BTPlayersViewController.xib */,
+				C29CD56917F777A900B36807 /* BTGameViewController.xib */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		C29CD54417F73C5700B36807 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				C29CD54117F73C5200B36807 /* UIImage+ImageEffects.h */,
+				C29CD54217F73C5200B36807 /* UIImage+ImageEffects.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C23BDB6117F3A1DE001F325C /* Backtag */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C23BDB8E17F3A1DE001F325C /* Build configuration list for PBXNativeTarget "Backtag" */;
+			buildPhases = (
+				C23BDB5E17F3A1DE001F325C /* Sources */,
+				C23BDB5F17F3A1DE001F325C /* Frameworks */,
+				C23BDB6017F3A1DE001F325C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Backtag;
+			productName = Backtag;
+			productReference = C23BDB6217F3A1DE001F325C /* Backtag.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C23BDB7C17F3A1DE001F325C /* BacktagTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C23BDB9117F3A1DE001F325C /* Build configuration list for PBXNativeTarget "BacktagTests" */;
+			buildPhases = (
+				C23BDB7917F3A1DE001F325C /* Sources */,
+				C23BDB7A17F3A1DE001F325C /* Frameworks */,
+				C23BDB7B17F3A1DE001F325C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C23BDB8317F3A1DE001F325C /* PBXTargetDependency */,
+			);
+			name = BacktagTests;
+			productName = BacktagTests;
+			productReference = C23BDB7D17F3A1DE001F325C /* BacktagTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C23BDB5A17F3A1DE001F325C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = BT;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "James George";
+				TargetAttributes = {
+					C23BDB7C17F3A1DE001F325C = {
+						TestTargetID = C23BDB6117F3A1DE001F325C;
+					};
+				};
+			};
+			buildConfigurationList = C23BDB5D17F3A1DE001F325C /* Build configuration list for PBXProject "Backtag" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C23BDB5917F3A1DE001F325C;
+			productRefGroup = C23BDB6317F3A1DE001F325C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C23BDB6117F3A1DE001F325C /* Backtag */,
+				C23BDB7C17F3A1DE001F325C /* BacktagTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C23BDB6017F3A1DE001F325C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C29CD54A17F74B0D00B36807 /* headerboards@2x.png in Resources */,
+				C23BDBBA17F3B217001F325C /* BTProfileViewController.xib in Resources */,
+				C2DCB09517F7253700966140 /* BTPlayViewController.xib in Resources */,
+				C29CD54E17F757B800B36807 /* BTFriendCell.xib in Resources */,
+				C29CD55817F76B1E00B36807 /* BTCreateViewController.xib in Resources */,
+				C2DCB08617F720CA00966140 /* BTMainViewController.xib in Resources */,
+				C23BDBAF17F3A754001F325C /* BTNavigationViewController.xib in Resources */,
+				C2DCB09A17F7254800966140 /* BTExploreViewController.xib in Resources */,
+				C23BDB7017F3A1DE001F325C /* InfoPlist.strings in Resources */,
+				C29CD55017F75AFB00B36807 /* BTExploreCell.xib in Resources */,
+				C2DCB09017F7252300966140 /* BTFriendsViewController.xib in Resources */,
+				C2DCB08B17F7250800966140 /* BTFeedViewController.xib in Resources */,
+				C29CD54C17F74D2E00B36807 /* comment@2x.png in Resources */,
+				C23BDB9917F3A27B001F325C /* BTLoginViewController.xib in Resources */,
+				C29CD56B17F777A900B36807 /* BTGameViewController.xib in Resources */,
+				C23BDB7817F3A1DE001F325C /* Images.xcassets in Resources */,
+				C29CD54017F7358700B36807 /* BTFeedCell.xib in Resources */,
+				C29CD56417F76E2400B36807 /* BTPlayersViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C23BDB7B17F3A1DE001F325C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C23BDB8917F3A1DE001F325C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C23BDB5E17F3A1DE001F325C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2DCB08A17F7250800966140 /* BTFeedViewController.m in Sources */,
+				C29CD56317F76E2400B36807 /* BTPlayersViewController.m in Sources */,
+				C23BDBAE17F3A754001F325C /* BTNavigationViewController.m in Sources */,
+				C23BDB7617F3A1DE001F325C /* BTAppDelegate.m in Sources */,
+				C29CD55717F76B1E00B36807 /* BTCreateViewController.m in Sources */,
+				C29CD55317F7659700B36807 /* BTSubViewController.m in Sources */,
+				C23BDB9817F3A27B001F325C /* BTLoginViewController.m in Sources */,
+				C29CD54317F73C5200B36807 /* UIImage+ImageEffects.m in Sources */,
+				C2DCB09917F7254800966140 /* BTExploreViewController.m in Sources */,
+				C2DCB08F17F7252300966140 /* BTFriendsViewController.m in Sources */,
+				C23BDBB917F3B217001F325C /* BTProfileViewController.m in Sources */,
+				C23BDB7217F3A1DE001F325C /* main.m in Sources */,
+				C2DCB08517F720CA00966140 /* BTMainViewController.m in Sources */,
+				C2DCB09417F7253700966140 /* BTPlayViewController.m in Sources */,
+				C29CD56A17F777A900B36807 /* BTGameViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C23BDB7917F3A1DE001F325C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C23BDB8B17F3A1DE001F325C /* BacktagTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C23BDB8317F3A1DE001F325C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C23BDB6117F3A1DE001F325C /* Backtag */;
+			targetProxy = C23BDB8217F3A1DE001F325C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C23BDB6E17F3A1DE001F325C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C23BDB6F17F3A1DE001F325C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C23BDB8717F3A1DE001F325C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C23BDB8817F3A1DE001F325C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C23BDB8C17F3A1DE001F325C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C23BDB8D17F3A1DE001F325C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C23BDB8F17F3A1DE001F325C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/jgeorge/Backtag/Backtag,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Backtag/Backtag-Prefix.pch";
+				INFOPLIST_FILE = "Backtag/Backtag-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C23BDB9017F3A1DE001F325C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/jgeorge/Backtag/Backtag,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Backtag/Backtag-Prefix.pch";
+				INFOPLIST_FILE = "Backtag/Backtag-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C23BDB9217F3A1DE001F325C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Backtag.app/Backtag";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Backtag/Backtag-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "BacktagTests/BacktagTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		C23BDB9317F3A1DE001F325C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Backtag.app/Backtag";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Backtag/Backtag-Prefix.pch";
+				INFOPLIST_FILE = "BacktagTests/BacktagTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C23BDB5D17F3A1DE001F325C /* Build configuration list for PBXProject "Backtag" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C23BDB8C17F3A1DE001F325C /* Debug */,
+				C23BDB8D17F3A1DE001F325C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C23BDB8E17F3A1DE001F325C /* Build configuration list for PBXNativeTarget "Backtag" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C23BDB8F17F3A1DE001F325C /* Debug */,
+				C23BDB9017F3A1DE001F325C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C23BDB9117F3A1DE001F325C /* Build configuration list for PBXNativeTarget "BacktagTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C23BDB9217F3A1DE001F325C /* Debug */,
+				C23BDB9317F3A1DE001F325C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C23BDB5A17F3A1DE001F325C /* Project object */;
+}
