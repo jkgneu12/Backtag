@@ -105,9 +105,9 @@
 		C29CD54F17F75AFB00B36807 /* BTExploreCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BTExploreCell.xib; sourceTree = "<group>"; };
 		C29CD55117F7659700B36807 /* BTSubViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTSubViewController.h; sourceTree = "<group>"; };
 		C29CD55217F7659700B36807 /* BTSubViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTSubViewController.m; sourceTree = "<group>"; };
-		C29CD55417F76B1E00B36807 /* BTCreateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BTCreateViewController.h; path = ../BTCreateViewController.h; sourceTree = "<group>"; };
-		C29CD55517F76B1E00B36807 /* BTCreateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BTCreateViewController.m; path = ../BTCreateViewController.m; sourceTree = "<group>"; };
-		C29CD55617F76B1E00B36807 /* BTCreateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BTCreateViewController.xib; path = ../BTCreateViewController.xib; sourceTree = "<group>"; };
+		C29CD55417F76B1E00B36807 /* BTCreateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTCreateViewController.h; sourceTree = "<group>"; };
+		C29CD55517F76B1E00B36807 /* BTCreateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTCreateViewController.m; sourceTree = "<group>"; };
+		C29CD55617F76B1E00B36807 /* BTCreateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BTCreateViewController.xib; sourceTree = "<group>"; };
 		C29CD56017F76E2400B36807 /* BTPlayersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTPlayersViewController.h; sourceTree = "<group>"; };
 		C29CD56117F76E2400B36807 /* BTPlayersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTPlayersViewController.m; sourceTree = "<group>"; };
 		C29CD56217F76E2400B36807 /* BTPlayersViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BTPlayersViewController.xib; sourceTree = "<group>"; };
